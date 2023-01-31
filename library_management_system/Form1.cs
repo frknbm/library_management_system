@@ -16,5 +16,23 @@ namespace library_management_system
         {
             InitializeComponent();
         }
+
+        private void userLogbtn_Click(object sender, EventArgs e)
+        {
+            string gelenAd = nameLogtxt.Text;
+            string gelenSifre = passwordLogtxt.Text;
+
+            if(gelenAd.Equals("furkan") && gelenSifre.Equals("123"))
+            {
+                MessageBox.Show("successful");
+            }
+            else
+            {
+                MessageBox.Show("username or password is wrong!");
+            }
+
+        }
+
+      
     }
 }
