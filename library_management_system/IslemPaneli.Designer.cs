@@ -33,18 +33,18 @@ namespace library_management_system
             this.panel1 = new System.Windows.Forms.Panel();
             this.kullaniciBilgiPanel = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ekleKullanicibtn = new System.Windows.Forms.Button();
+            this.guncelleKullanicibtn = new System.Windows.Forms.Button();
+            this.silKullanicibtn = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.silKullanicibtn);
+            this.panel1.Controls.Add(this.guncelleKullanicibtn);
+            this.panel1.Controls.Add(this.ekleKullanicibtn);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -63,8 +63,10 @@ namespace library_management_system
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.BackColor = System.Drawing.SystemColors.GrayText;
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
@@ -73,42 +75,52 @@ namespace library_management_system
             this.button1.TabIndex = 0;
             this.button1.Text = "               Users";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // ekleKullanicibtn
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 96);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(277, 96);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "             Add ";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ekleKullanicibtn.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ekleKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ekleKullanicibtn.FlatAppearance.BorderSize = 0;
+            this.ekleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ekleKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("ekleKullanicibtn.Image")));
+            this.ekleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ekleKullanicibtn.Location = new System.Drawing.Point(0, 96);
+            this.ekleKullanicibtn.Name = "ekleKullanicibtn";
+            this.ekleKullanicibtn.Size = new System.Drawing.Size(277, 96);
+            this.ekleKullanicibtn.TabIndex = 1;
+            this.ekleKullanicibtn.Text = "             Add ";
+            this.ekleKullanicibtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // guncelleKullanicibtn
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button3.Location = new System.Drawing.Point(0, 192);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(277, 96);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "               Update ";
-            this.button3.UseVisualStyleBackColor = true;
+            this.guncelleKullanicibtn.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.guncelleKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guncelleKullanicibtn.FlatAppearance.BorderSize = 0;
+            this.guncelleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guncelleKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("guncelleKullanicibtn.Image")));
+            this.guncelleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 192);
+            this.guncelleKullanicibtn.Name = "guncelleKullanicibtn";
+            this.guncelleKullanicibtn.Size = new System.Drawing.Size(277, 96);
+            this.guncelleKullanicibtn.TabIndex = 2;
+            this.guncelleKullanicibtn.Text = "               Update ";
+            this.guncelleKullanicibtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // silKullanicibtn
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 288);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(277, 96);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "                Delete";
-            this.button4.UseVisualStyleBackColor = true;
+            this.silKullanicibtn.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.silKullanicibtn.Dock = System.Windows.Forms.DockStyle.Top;
+            this.silKullanicibtn.FlatAppearance.BorderSize = 0;
+            this.silKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.silKullanicibtn.Image = ((System.Drawing.Image)(resources.GetObject("silKullanicibtn.Image")));
+            this.silKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.silKullanicibtn.Location = new System.Drawing.Point(0, 288);
+            this.silKullanicibtn.Name = "silKullanicibtn";
+            this.silKullanicibtn.Size = new System.Drawing.Size(277, 96);
+            this.silKullanicibtn.TabIndex = 3;
+            this.silKullanicibtn.Text = "                Delete";
+            this.silKullanicibtn.UseVisualStyleBackColor = false;
             // 
             // IslemPaneli
             // 
@@ -117,8 +129,10 @@ namespace library_management_system
             this.ClientSize = new System.Drawing.Size(1452, 693);
             this.Controls.Add(this.kullaniciBilgiPanel);
             this.Controls.Add(this.panel1);
+            this.IsMdiContainer = true;
             this.Name = "IslemPaneli";
             this.Text = "IslemPaneli";
+            this.Load += new System.EventHandler(this.IslemPaneli_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -127,9 +141,9 @@ namespace library_management_system
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button silKullanicibtn;
+        private System.Windows.Forms.Button guncelleKullanicibtn;
+        private System.Windows.Forms.Button ekleKullanicibtn;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel kullaniciBilgiPanel;
     }
