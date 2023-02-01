@@ -12,6 +12,7 @@ namespace library_management_system
 {
     public partial class Form1 : Form
     {
+        KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
         public Form1()
         {
             InitializeComponent();
@@ -22,13 +23,18 @@ namespace library_management_system
             string gelenAd = nameLogtxt.Text;
             string gelenSifre = passwordLogtxt.Text;
 
-            if(gelenAd.Equals("furkan") && gelenSifre.Equals("123"))
+            var personel = db.Personeller.Where(x => x.personel_ad.Equals(gelenAd) && x.personel_sifre.Equals(gelenSifre)).FirstOrDefault();
+
+            if (personel == null)
             {
-                MessageBox.Show("successful");
+                MessageBox.Show("username or password is wrong!");
             }
             else
             {
-                MessageBox.Show("username or password is wrong!");
+                MessageBox.Show("Successful");
+                IslemPaneli panel = new IslemPaneli();
+                panel.Show();
+                this.Hide();
             }
 
         }
