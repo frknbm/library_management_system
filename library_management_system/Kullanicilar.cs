@@ -21,5 +21,6 @@ namespace library_management_system
         public string kullanici_mail { get; set; }
         public string kullanici_tel { get; set; }
         public Nullable<double> kullanici_ceza { get; set; }
+        public string kullanici_cinsiyet { get; set; }
     }
 }

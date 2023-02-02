@@ -1,4 +1,5 @@
-﻿using System;
+﻿using library_management_system.Kullanici;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,6 +49,11 @@ namespace library_management_system
             klisteForm.Show();
         }
 
-       
+        private void ekleKullanicibtn_Click(object sender, EventArgs e)
+        {
+            KullaniciEkleForm ekleForm = new KullaniciEkleForm();
+            ekleForm.MdiParent = this;
+            ekleForm.Show();
+        }
     }
 }
