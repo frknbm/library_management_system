@@ -82,6 +82,7 @@ namespace library_management_system
             this.guncelleKullanicibtn.TabIndex = 2;
             this.guncelleKullanicibtn.Text = "               Update ";
             this.guncelleKullanicibtn.UseVisualStyleBackColor = false;
+            this.guncelleKullanicibtn.Click += new System.EventHandler(this.guncelleKullanicibtn_Click);
             // 
             // ekleKullanicibtn
             // 
