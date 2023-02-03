@@ -66,6 +66,7 @@ namespace library_management_system
             this.silKullanicibtn.TabIndex = 3;
             this.silKullanicibtn.Text = "                Delete";
             this.silKullanicibtn.UseVisualStyleBackColor = false;
+            this.silKullanicibtn.Click += new System.EventHandler(this.silKullanicibtn_Click);
             // 
             // guncelleKullanicibtn
             // 

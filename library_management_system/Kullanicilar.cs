@@ -14,6 +14,8 @@ namespace library_management_system
     
     public partial class Kullanicilar
     {
+        internal int kullanici_id;
+
         public int kulanici_id { get; set; }
         public string kullanici_ad { get; set; }
         public string kullanici_soyad { get; set; }
