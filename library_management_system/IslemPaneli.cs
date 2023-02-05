@@ -1,4 +1,5 @@
-﻿using library_management_system.Kullanici;
+﻿using library_management_system.Kaynak;
+using library_management_system.Kullanici;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,7 +27,12 @@ namespace library_management_system
             guncelleKullanicibtn.Visible = false;
             silKullanicibtn.Visible = false;
 
-            
+
+
+            ekleKaynakbtn.Visible = false;
+            guncelleKaynakbtn.Visible = false;
+            silKaynakbtn.Visible = false;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -68,6 +74,26 @@ namespace library_management_system
             KullaniciGuncelleForm kGuncel = new KullaniciGuncelleForm();
             kGuncel.MdiParent = this;
             kGuncel.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (ekleKaynakbtn.Visible == false)
+            {
+                ekleKaynakbtn.Visible = true;
+                guncelleKaynakbtn.Visible = true;
+                silKaynakbtn.Visible = true;
+            }
+            else
+            {
+                ekleKaynakbtn.Visible = false;
+                guncelleKaynakbtn.Visible = false;
+                silKaynakbtn.Visible = false;
+            }
+
+            KaynakListeForm kliste = new KaynakListeForm();
+            kliste.MdiParent = this;
+            kliste.Show();
         }
     }
 }
