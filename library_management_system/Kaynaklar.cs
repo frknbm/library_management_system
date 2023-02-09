@@ -14,6 +14,9 @@ namespace library_management_system
     
     public partial class Kaynaklar
     {
+        internal string kaynak_yayıncı;
+        internal DateTime kaynak_basımtarihi;
+
         public int kaynak_id { get; set; }
         public string kaynak_ad { get; set; }
         public string kaynak_yazar { get; set; }
