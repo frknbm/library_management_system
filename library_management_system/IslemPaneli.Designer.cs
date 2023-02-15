@@ -75,6 +75,7 @@ namespace library_management_system
             this.silKaynakbtn.TabIndex = 7;
             this.silKaynakbtn.Text = "             Delete ";
             this.silKaynakbtn.UseVisualStyleBackColor = false;
+            this.silKaynakbtn.Click += new System.EventHandler(this.silKaynakbtn_Click);
             // 
             // guncelleKaynakbtn
             // 
