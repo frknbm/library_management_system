@@ -91,6 +91,7 @@ namespace library_management_system
             this.guncelleKaynakbtn.TabIndex = 6;
             this.guncelleKaynakbtn.Text = "             Update ";
             this.guncelleKaynakbtn.UseVisualStyleBackColor = false;
+            this.guncelleKaynakbtn.Click += new System.EventHandler(this.guncelleKaynakbtn_Click);
             // 
             // ekleKaynakbtn
             // 
